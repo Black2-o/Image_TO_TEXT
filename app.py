@@ -3,12 +3,6 @@ from google import genai
 import PIL.Image
 import os
 
-
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
-
 # Access the API key
 API_KEY = os.getenv("API_KEY")
 
