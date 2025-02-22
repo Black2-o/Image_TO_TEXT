@@ -40,7 +40,7 @@ def upload_image():
             
             # Process the image with genai
             image = PIL.Image.open(image_path)
-            client = genai.Client(api_key=f"{API_KEY}")
+            client = genai.Client(api_key=API_KEY)
             response = client.models.generate_content(
                 model="gemini-2.0-flash",
                 contents=["Can You Give Me all The Text From Bangla also English and if there are any numbers also that? I just need all the text.", image]
